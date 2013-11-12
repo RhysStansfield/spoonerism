@@ -23,39 +23,72 @@ html, body {
 section {
   margin-left: auto;
   margin-right: auto;
-  padding: 20px, 20px, 0, 20px;
+  padding: 20px, 20px, 0, 0;
   width: 60%;
   background: #FFF;
-  padding-bottom:20%;
+  padding-bottom:12%;
   height: 100%;
 }
 
-form {
-  margin-bottom: 20%;
-}
-
 form input {
+  width: 60%;
+  height: 40px;
+  font-size: 35px;
   margin-top: 20%;
   margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+form input:focus {
+  border: #0099FF;
+  height: 44px;
+}
+
+form select, form button {
+  height:30px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+form select{
+  margin-left: 50%;
+  width: 6%;
+  border:1px solid #ccc;
+  vertical-align:top;
+}
+
+form button {
+  margin-left: 20px;
+  width: 21%;
+  border-radius: 10px;
 }
 
 button {
   font-family: 'Noto Sans', sans-serif;
+  background: #F0F0F0;
 }
 
 section p {
   margin-bottom: 50px;
+  width: 62%;
+  text-align: center;
+  font-size: 30px;
+  margin: 40px auto 20px auto;
 }
 
 footer a {
   color: #FF9966;
   text-decoration: none;
   padding-left:10px;
-  padding-top: 20px;
 }
 
 footer {
   position: absolute;
   bottom:0;
   height: 60px;
+  padding-top: 40px;
 }
