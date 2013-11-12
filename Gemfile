@@ -3,6 +3,7 @@ source 'http://rubygems.org/'
 ruby '2.0.0'
 
 gem 'sinatra'
+gem 'sinatra-base'
 gem 'shotgun'
 
 group :development, :test do
