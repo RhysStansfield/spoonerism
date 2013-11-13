@@ -2,6 +2,14 @@ class Spoonerism
 
   attr_reader :string
 
+  WRONG = [
+    'Urm, no, two words please, or I must punish you.',
+    'You do get how Spoonerisms work right?  Two words needed!',
+    "I need more than one word to Spoonerize it foo'!",
+    "I swear I will get all up in yo ayse if you don't give me at least two words!",
+    "Don't you go givin' me less than two words now!",
+    "Oh dear, it seems you suck and don't understand how Spoonerisms work!"]
+
   def initialize string
     @string = string
   end
@@ -26,7 +34,7 @@ class Spoonerism
       first[0, n], second[0, n] = second[0, n], first[0, n]
       right_sub(string.gsub(old_first,first),old_second,second).downcase.capitalize
     rescue
-      "Need more than one word to Spoonerize it foo'!"
+      WRONG.sample
     end
   end
 

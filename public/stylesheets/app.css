@@ -49,7 +49,7 @@ form input {
   width: 60%;
   height: 40px;
   font-size: 35px;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 20px;
@@ -96,6 +96,7 @@ section p {
 
 #spoonerism p {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 footer a {
