@@ -1,3 +1,7 @@
+html {
+  position: relative;
+}
+
 header, footer { 
   font-family: 'Orbitron', sans-serif;
   background: #0099FF;
@@ -7,6 +11,11 @@ header, footer {
   min-width: 100%;
 }
 
+header {
+  position: absolute;
+  top: 0;
+}
+
 header h1 {
   padding-top: 40px;
   padding-left: 10px;
@@ -14,6 +23,7 @@ header h1 {
 }
 
 html, body {
+  min-height: 100%;
   margin: 0;
   padding: 0;
   background: #F0F0F0;
@@ -27,14 +37,19 @@ section {
   width: 60%;
   background: #FFF;
   padding-bottom:7%;
-  height: 100%;
+  min-height: 100%;
+  margin-top: 110px;
+}
+
+section p {
+  padding-top: 50px;
 }
 
 form input {
   width: 60%;
   height: 40px;
   font-size: 35px;
-  margin-top: 20%;
+  margin-top: 40px;
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 20px;
@@ -73,11 +88,14 @@ button {
 }
 
 section p {
-  margin-bottom: 50px;
   width: 62%;
   text-align: center;
   font-size: 30px;
-  margin: 40px auto 20px auto;
+  margin: 0 auto 20px auto;
+}
+
+#spoonerism p {
+  margin-top: 10px;
 }
 
 footer a {
@@ -87,6 +105,8 @@ footer a {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   height: 60px;
   padding-top: 40px;
 }

@@ -9,9 +9,9 @@ Feature: Submitting a Spoonerism
 
   Scenario: Submitting a string
     And I press "Submit"
-    Then I should see "fpoon sork" 
+    Then I should see "Fpoon sork" 
 
   Scenario: Specifiying how many letters to spoonerise
     And I select "2" from "number"
     And I press "Submit"
-    Then I should see "fooon sprk"
+    Then I should see "Fooon sprk"

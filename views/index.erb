@@ -7,3 +7,8 @@
   </select>
   <button>Submit</button>
 </form>
+<div id='spoonerism'>
+  <% if session[:spoonerism] %>
+    <p><%= session[:spoonerism] %></p>
+  <% end %>
+</div>

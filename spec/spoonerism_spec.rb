@@ -16,11 +16,11 @@ describe Spoonerism do
     end
 
     it 'can switch the first two letters of two words' do
-      expect(booner.switch_word_beginnings).to eq 'fpoon sork'
+      expect(booner.switch_word_beginnings).to eq 'Fpoon sork'
     end
 
     it 'can switch the first two letters of each word' do 
-      expect(booner.switch_word_beginnings(2)).to eq 'fooon sprk'
+      expect(booner.switch_word_beginnings(2)).to eq 'Fooon sprk'
     end
 
   end

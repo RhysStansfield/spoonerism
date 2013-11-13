@@ -13,8 +13,8 @@ class WebSpooner < Sinatra::Base
   end
 
   post '/submit' do 
-    spooner = Spoonerism.new(params[:spoonerism])
-    session[:spoonerism] = spooner.switch_word_beginnings(params[:number].to_i)
+    spooner = Spoonerism.new params[:spoonerism]
+    session[:spoonerism] = spooner.switch_word_beginnings params[:number].to_i
     redirect to('/')
   end
 
